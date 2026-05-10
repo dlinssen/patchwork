@@ -7,3 +7,4 @@ class PlayerState:
     board: Board
     buttons: int = 5
     time: int = 0
+    button_income: int = 0
