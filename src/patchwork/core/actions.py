@@ -11,11 +11,16 @@ class Action:
 
 @dataclass(frozen=True)
 class BuyPieceAction(Action):
+    """Buy a piece from the circle and place it on the active player's board."""
+
     piece_id: str
     placement: Placement
 
 
 @dataclass(frozen=True)
 class PassAction(Action):
-    # this moves your time one ahead of the other player
+    """Pass instead of buying a patch."""
+
+    # In the full rules, passing moves this player ahead of the opponent
+    # and awards buttons for the spaces crossed.
     pass
